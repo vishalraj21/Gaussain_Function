@@ -15,6 +15,16 @@ for ticketIndex = 1:numTickets
     % Create an empty ticket
     ticket = zeros(3, 9);
 
+    % Define ranges for each column
+ranges = {[1 10], [11 20], [21 30], [31 40], [41 50], [51 60], [61 70], [71 80], [81 90]};
+
+% Generate and print 5 tickets
+numTickets = 5;
+
+for ticketIndex = 1:numTickets
+    % Create an empty ticket
+    ticket = zeros(3, 9);
+
     % Fill each column with sorted non-repeating numbers from its range
     for i = 1:9
         colRange = ranges{i};
